@@ -1,0 +1,8 @@
+operations.o: fs/operations.c fs/operations.h fs/config.h fs/state.h \
+  utils/betterassert.h utils/logging.h
+state.o: fs/state.c fs/state.h fs/config.h fs/operations.h
+manager.o: manager/manager.c utils/logging.h
+mbroker.o: mbroker/mbroker.c utils/logging.h
+pub.o: publisher/pub.c utils/logging.h
+sub.o: subscriber/sub.c utils/logging.h
+logging.o: utils/logging.c utils/logging.h
